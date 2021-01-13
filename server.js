@@ -36,24 +36,6 @@ var controller = {
 
         controller.setupRouter(app);
 
-        // let options = {
-        //     swaggerDefinition: {
-        //         info: {
-        //             description: 'Server Swagger API',
-        //             title: 'Swagger',
-        //             version: '1.0.0',
-        //         },
-        //         basePath: '/',
-        //         produces: [
-        //             "application/json",
-        //             "application/xml"
-        //         ],
-        //         schemes: ['http', 'https'],
-        //     },
-        //     basedir: __dirname, //app absolute path
-        //     files: ['./app/**/routes*.js', './app/**/model*.js'] //Path to the API handle folder
-        // };
-        // expressSwagger(options);
         const options = {
             definition: {
                 openapi: "3.0.0",
@@ -61,19 +43,7 @@ var controller = {
                     title: "Exam API Express API with Swagger",
                     version: "1.0.0",
                     description: "Rest CRUD API application made with Swagger",
-                    // license: {
-                    //     name: "MIT",
-                    //     url: "https://spdx.org/licenses/MIT.html",
-                    // },
-                    // contact: {
-                    //     name: "LogRocket",
-                    //     url: "https://logrocket.com",
-                    //     email: "info@email.com",
-                    // },
                 },
-                // servers: [{
-                //     url: "http://localhost:3000/api/",
-                // }, ],
             },
             apis: ["./app/**/route*.js"],
         };
